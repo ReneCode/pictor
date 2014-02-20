@@ -12,7 +12,8 @@ function route(app, db) {
 
 
 	app.get('/', contentHandler.showRootPage);
-	app.post('/paint', contentHandler.paint);
+	app.post('/clpaint', contentHandler.clientPaint);
+	app.get('/paint', contentHandler.getPaint);
 //	app.get('/users', user.list);
 
 }

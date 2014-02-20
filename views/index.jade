@@ -5,10 +5,13 @@ block content
 	p Welcome to #{title}
 
 	div
+		input#username(type:"text" placeholder="Name" value="#{username}")
+		input#follower(type:"text" placeholder="Follower" value="#{follower}")
+	div
 		a(href='/login') Login
 	div
 		a(href='/register') Register
 	div
-		a#test(href='#') test
+		a#redraw(href='#') redraw
 	div
 		canvas#canvas(width="400" height="400" style="border:1px solid #000000;") 

@@ -1,0 +1,14 @@
+extends layout
+
+block content
+	h1= title
+	p Welcome to #{title}
+
+	div
+		a(href='/login') Login
+	div
+		a(href='/register') Register
+	div
+		a#test(href='#') test
+	div
+		canvas#canvas(width="400" height="400" style="border:1px solid #000000;") 
